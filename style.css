@@ -1,0 +1,211 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Texto escuro por padrão */
+}
+
+header {
+    background-color: #000; /* Fundo preto para o cabeçalho */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #00b300; /* Verde para os links */
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #fff; /* Branco para o link ativo */
+    border-bottom: 2px solid #00b300; /* Linha inferior verde para o link ativo */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos específicos para a página inicial */
+#pagina-inicial .promo {
+    background-color: #00b300; /* Fundo verde para a promoção */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white; /* Texto branco */
+}
+
+#pagina-inicial .promo h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#pagina-inicial .promo p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+#pagina-inicial .cta-button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#pagina-inicial .cta-button:hover {
+    background-color: #555;
+}
+
+/* Estilos específicos para a seção "Quem Somos" na página inicial */
+#pagina-inicial .quem-somos {
+    padding: 20px;
+    text-align: center;
+}
+
+#pagina-inicial .biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina-inicial .ficha {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#pagina-inicial .ficha:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+#pagina-inicial .ficha h3 {
+    margin-top: 0;
+}
+
+#pagina-inicial .ficha p {
+    margin-top: 10px;
+}
+
+/* Estilos específicos para a seção "Veja como garantir seu bônus" na página inicial */
+#pagina-inicial .steps {
+    text-align: center;
+}
+
+#pagina-inicial .passos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#pagina-inicial .passo {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px); /* Ajusta a largura dos itens */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#pagina-inicial .passo:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+#pagina-inicial .passo h3 {
+    font-size: 1.2rem;
+    color: #00b300; /* Títulos verdes para destaque */
+}
+
+#pagina-inicial .passo p {
+    font-size: 1rem;
+    color: #333; /* Texto escuro */
+}
+
+/* Estilos específicos para a página de cadastro */
+form#cadastroForm input,
+form#cadastroForm select,
+form#cadastroForm button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    color: #333;
+}
+
+form#cadastroForm button {
+    background-color: #00b300; /* Fundo verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form#cadastroForm button:hover {
+    background-color: #008000; /* Verde mais escuro no hover */
+}
+
+/* Estilos específicos para a página de apostas */
+.match {
+    background-color: #f0f0f0; /* Fundo cinza claro para as fichas */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #333; /* Texto escuro */
+}
+
+.match h3 {
+    font-size: 1.2rem;
+    color: #00b300; /* Títulos verdes para destaque */
+}
+
+.match label {
+    display: block;
+    margin: 10px 0;
+}
+
+.match .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.match .options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.match .potential-win {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333; /* Texto escuro */
+}
+
+/* Rodapé */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
